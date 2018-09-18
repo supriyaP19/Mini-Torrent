@@ -1,0 +1,2 @@
+g++ -g -Wall sha1.cpp -o sha -lssl -lcrypto
+g++ -pthread -o track tracker.cpp
