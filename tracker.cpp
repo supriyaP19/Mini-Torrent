@@ -1,55 +1,49 @@
 // Server side C/C++ program to demonstrate Socket programming 
-#include <iostream>
 #include <unistd.h> 
 #include <stdio.h> 
 #include <sys/socket.h> 
 #include <stdlib.h> 
 #include <netinet/in.h> 
 #include <string.h> 
-#include <string>
+#include <pthread.h>
 #include <arpa/inet.h>
 #include <cstdlib>
-#define PORT 8080 
-using namespace std;
+#include <iostream>
+#define PORT 8080
+using namespace std; 
 int i=0;
 
 struct thread_data {
-   int  thread_id;
-   char *message;
+   int thread_id;
+   int socket_id;
 };
 
-void *wait(void *threadarg) {
-   int i;
-   long tid;
+void *thread_process(void *arg) {
+    char buffer[1024] = {0}; 
+    char *hello = "Hello from server"; 
+    struct thread_data *t;
+    t = (struct thread_data *) arg;
+    int valread = read( t->socket_id , buffer, 1024); 
+    printf("%s\n",buffer ); 
+    send(t->socket_id , hello , strlen(hello) , 0 ); 
+    printf("Hello message sent\n");
+    sleep(100);
+    printf("sleep over");
+   // cout << "Thread ID : " << t->thread_id ;
+   // cout << " Message : " << t->socket_id << endl;
 
-  // tid = (long)t;
-   struct thread_data *my_data;
-   my_data = (struct thread_data *) threadarg;
-
-   cout << "Thread ID : " << my_data->thread_id ;
-   cout << " Message : " << my_data->message << endl;
-   
    pthread_exit(NULL);
 }
 
 int main(int argc, char const *argv[]) 
-{   
-   int rc;
-   int i;
-   struct thread_data *td;
-   pthread_t threads[10];
-   pthread_attr_t attr;
-   void *status;
-    int server_fd, new_socket, valread; 
+{ 
+    int server_fd, socket_created, valread; 
     struct sockaddr_in address; 
     int opt = 1; 
     int addrlen = sizeof(address); 
-    char buffer[1024] = {0}; 
-    char *hello = "Hello from server"; 
+   // char buffer[1024] = {0}; 
+    
        
-   pthread_attr_init(&attr);
-   pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_JOINABLE);
-
     // Creating socket file descriptor 
     if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) == 0) 
     { 
@@ -75,36 +69,33 @@ int main(int argc, char const *argv[])
         perror("bind failed"); 
         exit(EXIT_FAILURE); 
     } 
+
+
     while(1){
-         if (listen(server_fd, 3) < 0) 
+        if (listen(server_fd, 3) < 0) 
         { 
             perror("listen"); 
             exit(EXIT_FAILURE); 
         } 
-        
-          cout <<"main() : creating thread, " << i << endl;
-          td[i].thread_id = i;
-          td[i].message = "This is message";
-          rc = pthread_create(&threads[i], NULL, wait,(void *)&td[i]);
-          
-          if (rc) {
-             cout << "Error:unable to create thread," << rc << endl;
-             exit(-1);
-          }
-       
-        if ((new_socket = accept(server_fd, (struct sockaddr *)&address,  
+        if ((socket_created = accept(server_fd, (struct sockaddr *)&address,  
                            (socklen_t*)&addrlen))<0) 
         { 
             perror("accept"); 
             exit(EXIT_FAILURE); 
         } 
-        valread = read( new_socket , buffer, 1024); 
-        printf("%s\n",buffer ); 
-        send(new_socket , hello , strlen(hello) , 0 ); 
-        printf("Hello message sent\n"); 
-        i++;
-
+       pthread_t th[12];
+       struct thread_data t[10];
+       int rc;
+       t[i].thread_id=i;
+       t[i].socket_id=socket_created;
+       rc = pthread_create(&th[i], NULL, thread_process, (void *)&t[i]);
+       if(rc){
+             cout << "Error:unable to join," << rc << endl;
+             exit(-1);
+        }
+        pthread_detach(i);
     }
-       
+    
+   
     return 0; 
-} 
+}
