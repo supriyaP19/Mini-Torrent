@@ -25,9 +25,10 @@ void *thread_process(void *arg) {
     t = (struct thread_data *) arg;
     int valread = read( t->socket_id , buffer, 1024); 
     printf("%s\n",buffer ); 
-    send(t->socket_id , hello , strlen(hello) , 0 ); 
-    printf("Hello message sent\n");
-    sleep(100);
+    //send(t->socket_id , hello , strlen(hello) , 0 ); 
+    //printf("Hello message sent\n");
+    printf("thread id %d\n",t->thread_id);
+    sleep(5);
     printf("sleep over");
    // cout << "Thread ID : " << t->thread_id ;
    // cout << " Message : " << t->socket_id << endl;
@@ -70,7 +71,7 @@ int main(int argc, char const *argv[])
         exit(EXIT_FAILURE); 
     } 
 
-
+    
     while(1){
         if (listen(server_fd, 3) < 0) 
         { 
@@ -83,17 +84,22 @@ int main(int argc, char const *argv[])
             perror("accept"); 
             exit(EXIT_FAILURE); 
         } 
-       pthread_t th[12];
-       struct thread_data t[10];
+       pthread_t th;
+       struct thread_data t;
        int rc;
-       t[i].thread_id=i;
-       t[i].socket_id=socket_created;
-       rc = pthread_create(&th[i], NULL, thread_process, (void *)&t[i]);
+       i++;
+       t.thread_id=i;
+       t.socket_id=socket_created;
+
+       rc = pthread_create(&th, NULL, thread_process, (void *)&t);
+
        if(rc){
              cout << "Error:unable to join," << rc << endl;
              exit(-1);
         }
-        pthread_detach(i);
+        pthread_detach(th);
+       //i++;
+        cout<<"returned";
     }
     
    
