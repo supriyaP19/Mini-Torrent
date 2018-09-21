@@ -33,7 +33,7 @@ int main() {
     } 
    
     memset(&serv_addr, '0', sizeof(serv_addr)); 
-   
+    
     serv_addr.sin_family = AF_INET; 
     serv_addr.sin_port = htons(PORT); 
        
@@ -51,18 +51,19 @@ int main() {
     } 
 
 //socket programming
-    int i = 0;
+    int i = 0;  
     char buf[SHA_DIGEST_LENGTH*2];
     char ch[3];
    	int size;
-    char file_read[1024]="VID-20131005-WA0003.mp4";
+    //char file_read[1024]="Kingdom Of Hevan.mkv";
+    char file_read[1024]="video.mp4";
    	std::ifstream file (file_read, ios::in|ios::binary|ios::ate);
 
   	if (file.is_open())
   	{
-  		printf("file opening\n");
+  		//printf("file opening\n");
 	    size = file.tellg();
-	    file.seekg(0, ios::beg);
+	    file.seekg(0, ios::beg); 
 	   
   	}
     
@@ -89,14 +90,15 @@ int main() {
   		
 		 
     // }
-    
+    string clientipport="127.0.0.1:8001";
+    //clientipport=clientipport+"\n";
   	string tracker1ipport="128.111.23.1:8080";
     string tracker2ipport="128.12.14.1:8000";
     complete_sha1=tracker1ipport+"\n"+tracker2ipport+"\n"+ofile+"\n"+to_string(size)+"\n";
-    complete_sha1_to_tracker=complete_sha1_to_tracker+file_read+"\n";
+   // complete_sha1_to_tracker=complete_sha1_to_tracker+file_read+"\n";
   	FILE *fs;
   	fs =fopen(filen,"w");
-    cout<<"o file name: "<<filen<<endl;
+    //cout<<"o file name: "<<filen<<endl;
 		 i=0;
   			while(chunks_length*(i+1)<size)
   			{	
@@ -143,13 +145,26 @@ int main() {
   			}
   			
   complete_sha1_to_tracker=complete_sha1_to_tracker+"\0";
-  complete_sha1=complete_sha1+"\0";
+  //complete_sha1=complete_sha1+"\0";
   cout<<"\n"<<complete_sha1<<endl;
   fprintf(fs,"%s",complete_sha1.c_str());
 
+  //doing hash of the generated sha1 to send to tracker
+  string sha1_of_sha1;
+  char temp_string[complete_sha1_to_tracker.length()];
+  char ch1[3];
+  SHA1((unsigned char *)complete_sha1_to_tracker.c_str(),complete_sha1_to_tracker.length(),(unsigned char *)temp_string);
+  for (int h=0; h < 20; h++) {
 
+              snprintf(ch1,sizeof(ch1),"%02x",temp_string[h]);
+              sha1_of_sha1=sha1_of_sha1+ch1+" ";
+            
+              
+    }
+  //sha1_of_sha1=sha1_of_sha1+"\n";
+   
   //length of mtorrent file
-  int len=complete_sha1_to_tracker.length();
+  int len=sha1_of_sha1.length();
   //char msg[len];
   char msg2[1024];
   //reading output file and sending to client
@@ -167,9 +182,12 @@ int main() {
   //     k++;
   // }
  // strcpy(msg2,complete_sha1.c_str());
+  //cout<<"ipport: "<<clientipport<<endl;   
+  send(sock , clientipport.c_str(),clientipport.length(),0); 
+  send(sock , sha1_of_sha1.c_str() , len , 0 );
 
-  send(sock , complete_sha1_to_tracker.c_str() , len , 0 ); 
   
+    
   //valread = read( sock , msg2, strlen(msg2)); 
   
    
