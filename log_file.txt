@@ -1,0 +1,91 @@
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
