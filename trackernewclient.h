@@ -12,6 +12,10 @@
 #include <string.h> 
 #include <arpa/inet.h>
 #include <cstdlib>
+#include <pthread.h>
+#include <unordered_map>
+#include <vector>
+#include <set>
 #include <fstream>
 #define PORT 8080 
 #define SHA_DIGEST 10
@@ -19,4 +23,6 @@
 using namespace std;
 
 
-int client_program(string file_read_str,string filen_str,string clientipport,string tracker1ipport,string tracker2ipport);
+
+string client_program(string file_read_str,string filen_str,string clientipport,string tracker1ipport,string tracker2ipport);
+string getcommand(string torrent_path,string dest_path,string clientipport);

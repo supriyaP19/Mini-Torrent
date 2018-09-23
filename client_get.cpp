@@ -1,24 +1,6 @@
-#include <unistd.h> 
-#include <stdio.h> 
-#include <sys/socket.h> 
-#include <stdlib.h> 
-#include <netinet/in.h> 
-#include <string.h> 
-#include <openssl/sha.h>
-#include <pthread.h>
-#include <arpa/inet.h>
-#include <cstdlib>
-#include <iostream>
-#include <unordered_map>
-#include <fstream>
-#include <set>
-#define PORT 8080
-using namespace std; 
-#define SHA_DIGEST 10
-#define chunks_length 512*1024
-using namespace std;
+#include "trackernewclient.h"
 
-int main(int argc,char *argv[]){
+string getcommand(string torrent_path,string dest_path,string clientipport){
     string complete_sha1;
     string complete_sha1_to_tracker;
     cout<<"in client123"<<endl;
@@ -32,7 +14,7 @@ int main(int argc,char *argv[]){
     { 
         printf("\n Socket creation error \n"); 
         //c_logfile<<"error in socket creation"<<endl;
-        return -1; 
+        return "-1"; 
     } 
     cout<<"socket creation"<<endl;
     // c_logfile<<"**********************************************"<<endl;
@@ -50,8 +32,8 @@ int main(int argc,char *argv[]){
     serv_addr.sin_addr.s_addr = INADDR_ANY;
 
      address.sin_family = AF_INET; 
-     string port(argv[1]);
-     string ip(argv[2]);
+     string ip(clientipport.substr(0,clientipport.find(':')));
+     string port(clientipport.substr(clientipport.find(':')+1,clientipport.length()));
     address.sin_port = htons(stoi(port)); 
     address.sin_addr.s_addr = inet_addr(ip.c_str()); 
 
@@ -71,17 +53,17 @@ int main(int argc,char *argv[]){
     { 
         printf("\nInvalid address/ Address not supported \n"); 
         //c_logfile<<"Invalid Address"<<endl;
-        return -1; 
+        return "-1"; 
     } 
     cout<<"after inet-ptons"<<endl;
     if (connect(sock, (struct sockaddr *)&serv_addr, sizeof(serv_addr)) < 0) 
     { 
         printf("\nConnection Failed \n");
         //c_logfile<<"Connect Failed"<<endl; 
-        return -1; 
+        return "-1"; 
     } 
     cout<<"After connect"<<endl;
-    std::ifstream f("song.mtorrent");
+    std::ifstream f("xyz.mtorrent");
     string line="";
     string sha1="";
     string ipport="";
@@ -117,36 +99,40 @@ int main(int argc,char *argv[]){
     send(sock , sha1_of_sha1.c_str() , sha1_of_sha1.length() , 0 );
     int valread1= read( sock ,buffer, 100 );
     cout<<"response received from server :"<<buffer;
-    c_logfile<<"response received from server"<<endl;
+    //c_logfile<<"response received from server"<<endl;
     cout<<"closing nConnection with tracker"<<endl;
-
+   
 
   close(sock);
-  c_logfile<<"connection closed with the tracker"<<endl;
-  c_logfile<<"establishing connection with the other client"<<endl;
 
-    int sock = 0, valread; 
-    string port1="5000";
-    string ip1="111.22.33.36";
-    struct sockaddr_in new_client_addr; 
-    address.sin_family = AF_INET;
-    address.sin_port = htons(stoi(port1)); 
-    address.sin_addr.s_addr = inet_addr(ip1.c_str());
-    c_logfile<<"trying to connect with client who has the required file"<<endl;
 
-    if (connect(sock, (struct sockaddr *)&serv_addr, sizeof(serv_addr)) < 0) 
-    { 
-        printf("\nConnection Failed \n");
-        c_logfile<<"Connect Failed"<<endl; 
-        return -1; 
-    } 
-    c_logfile<<"connection completed"<<endl;
+//   c_logfile<<"connection closed with the tracker"<<endl;
+//   c_logfile<<"establishing connection with the other client"<<endl;
 
-    char arr[10]="hey who are you";
+//     int sock = 0, valread; 
+//     string port1="5000";
+//     string ip1="111.22.33.36";
+//     struct sockaddr_in new_client_addr; 
+//     address.sin_family = AF_INET;
+//     address.sin_port = htons(stoi(port1)); 
+//     address.sin_addr.s_addr = inet_addr(ip1.c_str());
+//     c_logfile<<"trying to connect with client who has the required file"<<endl;
 
-    send(sock , arr , strlen(arr) , 0 ); 
-    printf("sent message to client");
+//     if (connect(sock, (struct sockaddr *)&serv_addr, sizeof(serv_addr)) < 0) 
+//     { 
+//         printf("\nConnection Failed \n");
+//         c_logfile<<"Connect Failed"<<endl; 
+//         return -1; 
+//     } 
+//     c_logfile<<"connection completed"<<endl;
+
+//     char arr[10]="hey who are you";
+
+//     send(sock , arr , strlen(arr) , 0 ); 
+//     printf("sent message to client");
+
+// // 
     //file.close();
-  return 0;
+  return buffer;
  
 }

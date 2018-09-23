@@ -1,6 +1,6 @@
 #include "trackernewclient.h"
 
-int client_program(string file_read_str,string filen_str,string clientipport,string tracker1ipport,string tracker2ipport){
+string client_program(string file_read_str,string filen_str,string clientipport,string tracker1ipport,string tracker2ipport){
   //socket programming
     std::fstream c_logfile;
     string client_log_file="client_log_file.txt"; 
@@ -25,7 +25,7 @@ int client_program(string file_read_str,string filen_str,string clientipport,str
     { 
         printf("\n Socket creation error \n"); 
         c_logfile<<"error in socket creation"<<endl;
-        return -1; 
+        return "-1"; 
     } 
     c_logfile<<"**********************************************"<<endl;
     c_logfile<<"Socket created successfully"<<endl;
@@ -62,14 +62,14 @@ int client_program(string file_read_str,string filen_str,string clientipport,str
     { 
         printf("\nInvalid address/ Address not supported \n"); 
         c_logfile<<"Invalid Address"<<endl;
-        return -1; 
+        return "-1"; 
     } 
    
     if (connect(sock, (struct sockaddr *)&serv_addr, sizeof(serv_addr)) < 0) 
     { 
         printf("\nConnection Failed \n");
         c_logfile<<"Connect Failed"<<endl; 
-        return -1; 
+        return "-1"; 
     } 
     c_logfile<<"Connect successful"<<endl;
 
@@ -77,68 +77,69 @@ int client_program(string file_read_str,string filen_str,string clientipport,str
     int i = 0;  
     char buf[10];
     char ch[3];
-   	int size;
+    int size;
 
-   	std::ifstream file (file_read_str.c_str(), ios::in|ios::binary|ios::ate);
+    std::ifstream file (file_read_str.c_str(), ios::in|ios::binary|ios::ate);
 
-  	if (file.is_open())
-  	{
-	    size = file.tellg();
-	    file.seekg(0, ios::beg); 
+    if (file.is_open())
+    {
+      size = file.tellg();
+      file.seekg(0, ios::beg); 
       c_logfile<<file_read_str<<" file is opened in read mode"<<endl;
-	   
-  	}
+     
+    }
 
     complete_sha1=tracker1ipport+"\n"+tracker2ipport+"\n"+filen_str.c_str()+to_string(size)+"\n";
-  	FILE *fs;
+    FILE *fs;
     filen_str[filen_str.length()-1]='\0';
-  	fs =fopen(filen_str.c_str(),"w");
+    fs =fopen(filen_str.c_str(),"w");
     c_logfile<<filen_str<<"opened in write mode"<<endl;
-		 i=0;
-  			while(chunks_length*(i+1)<size)
-  			{	
-  				
-  				unsigned char temp[20];
-  				char buff[chunks_length];
-  				char buf[20];
-  				file.read(buff,chunks_length);
-  				file.seekg(chunks_length*(i+1),ios::beg);
-	  			SHA1((unsigned char *)buff, chunks_length, temp);
-	  			for (int j=0; j < 10; j++) {
-	  				
+     i=0;
+        while(chunks_length*(i+1)<size)
+        { 
+          
+          unsigned char temp[20];
+          char buff[chunks_length];
+          char buf[20];
+          file.read(buff,chunks_length);
+          file.seekg(chunks_length*(i+1),ios::beg);
+          SHA1((unsigned char *)buff, chunks_length, temp);
+          for (int j=0; j < 10; j++) {
+            
               snprintf(ch,sizeof(ch),"%02x",temp[j]);
               complete_sha1=complete_sha1+ch;
               complete_sha1_to_tracker=complete_sha1_to_tracker+ch;
             
-	    		}	
+          } 
           complete_sha1=complete_sha1+"\n";
           // complete_sha1_to_tracker=complete_sha1_to_tracker+"\n";
-	    		i++;
-	    		printf("\n");	
-  			}
-  			if(chunks_length*(i+1)>size){
+          i++;
+          printf("\n"); 
+        }
+        if(chunks_length*(i+1)>size){
 
-  			 	int p =size-chunks_length*i;
-        	char buf[20];
-  				char buff2[p];
-  				unsigned char temp[20];
-  				file.read(buff2,p);
-	  			SHA1((unsigned char *)buff2,p, temp);
-	  			for (int j=0; j < 10; j++) {
+          int p =size-chunks_length*i;
+          char buf[20];
+          char buff2[p];
+          unsigned char temp[20];
+          file.read(buff2,p);
+          SHA1((unsigned char *)buff2,p, temp);
+          for (int j=0; j < 10; j++) {
 
               snprintf(ch,sizeof(ch),"%02x",temp[j]);
               complete_sha1=complete_sha1+ch;
               complete_sha1_to_tracker=complete_sha1_to_tracker+ch;
             
-	        		
-	    		}
+              
+          }
 
 
-  			}
-  			c_logfile<<"SHA1 of file in chunks of 512KB created"<<endl;
+        }
+        c_logfile<<"SHA1 of file in chunks of 512KB created"<<endl;
   complete_sha1_to_tracker=complete_sha1_to_tracker+"\0";
   complete_sha1=complete_sha1+"\0";
   cout<<"\n"<<complete_sha1<<endl;
+  //fs<<complete_sha1<<endl;
   fprintf(fs,"%s",complete_sha1.c_str());
   cout<<"------------";
   cout<<complete_sha1_to_tracker<<endl;
@@ -174,7 +175,7 @@ int client_program(string file_read_str,string filen_str,string clientipport,str
     send(sock , (const char*)clientipport.c_str(),clientipport.length(),0); 
   
   close(sock);
-	file.close();
-  return 0;
+  file.close();
+  return sha1_of_sha1;
  
 }
