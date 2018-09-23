@@ -16,103 +16,118 @@
 using namespace std; 
 
 int i=0;
-std::ofstream fseeder;
+fstream f;
 string seederlist_file="seeder_list.txt";
-std::ofstream logfile;
-string log_file="log_file.txt";
-std::ifstream f("seeder_list.txt");
+ofstream logfile;
+void *getcommand(void *threadarg);
+void *thread_process(void *arg);
+
+
 //string seeder="seeder_list.txt";
 unordered_map<string, set<string>> seederlist;
 
 struct thread_data {
    int thread_id;
    int socket_id;
+   string seed;
+};
+struct thread_data1 {
+   int thread_id1;
+   int socket_id1;
+   string seed1;
 };
 
 void *thread_process(void *arg) {
 
     set<string>::iterator setitr;
     unordered_map<string, set<string>>::iterator mapitr;
-
-    fseeder.open(seederlist_file.c_str(),ofstream::app);
-
-
     char buffer[1024*1024] = {0}; 
     char ipport[21];
-    
-    char *hello = "Hello from server"; 
+    char command[20];
     struct thread_data *t;
     t = (struct thread_data *) arg;
-    
-    int valread = read( t->socket_id , buffer, 1024);
-    
-    char buffer2[1024];
-    strcpy(buffer2,buffer);
- 
-   
-   char seed[57];
-   char delimeter[1];
-   delimeter[0]='-';
-   cout<<"buffer before "<<buffer2<<endl;
-   strcat(buffer2,delimeter);
-      cout<<"buffer2 "<<buffer2<<endl;  
-   // strcat(buffer2,ipport);
-   //    cout<<"buffer2 "<<buffer2<<endl;
-    printf("seeder lst:%s\n",buffer2);
-    sleep(3);
-    
-    int valread1 = read( t->socket_id , ipport, 16); 
-    strcat(buffer2,ipport);
-    fseeder<<buffer2<<endl;
-    printf("ipport: %s\n",ipport);
-    printf("sha1: %s\n",buffer); 
-   
-   //printf("===============================\n");
+    int valread0 = read(  t->socket_id ,command,20 );
+    //cout<<"inside thread and command is :"<<command<<endl;
+    string clients;
+    if(command[0]=='1'){
 
-   
+      int valread1= read( t->socket_id ,buffer, 40 );
+      //cout<<"in get command thread and sha1 is: "<<buffer<<endl;
+      mapitr = seederlist.find(buffer);
 
-    mapitr = seederlist.find(buffer);
-    if(mapitr!=seederlist.end()){
-        (mapitr->second).insert(ipport);
+      if(mapitr!=seederlist.end()){
+        cout<<"found"<<endl;
+            for(setitr=(mapitr->second).begin();setitr!=(mapitr->second).end();++setitr){
+               
+               clients=clients+(*setitr)+"\n";
+
+            }
+      }
+      clients[clients.length()-1]='\0';
+      cout<<clients<<endl;
+
+      memset(buffer,0,sizeof(buffer));
+      send(t->socket_id , (const char*)clients.c_str(),clients.length(),0);
     }
-    else{
-        set<string> ip;
-        ip.insert(ipport);
-        seederlist[buffer]=ip;
+    else if(command[0]=='2'){
+       int valread = read( t->socket_id , buffer, 40);
+       //cout<<t->seed<<"here"<<endl;
+       char buffer2[40];
+       strcpy(buffer2,buffer);
+       char seed[57];
+       char delimeter[1];
+       delimeter[0]='-';
+       cout<<"buffer before "<<buffer<<endl;
+       
+       strcat(buffer,delimeter);
+       buffer[41]='\0';
+       cout<<"buffe now "<<buffer<<endl;  
+       // strcat(buffer2,ipport);
+       //    cout<<"buffer2 "<<buffer2<<endl;
+        printf("seeder lst:%s\n",buffer);
+        sleep(1);
+        //f.open()
+        int valread1 = read( t->socket_id , ipport, 16); 
+        strcat(buffer,ipport);
+        
+        cout<<"After concatenating ipport: "<<buffer<<endl;
+        ofstream fs;
+        fs.open(t->seed,std::fstream::out|std::fstream::app);
+        fs<<buffer<<endl;
+        logfile<<"writing in seeder_list file"<<endl;
+        printf("ipport: %s\n",ipport);
+        printf("sha1: %s\n",buffer); 
+       
+       //printf("===============================\n");
+
+       
+
+        mapitr = seederlist.find(buffer);
+        if(mapitr!=seederlist.end()){
+            (mapitr->second).insert(ipport);
+        }
+        else{
+            set<string> ip;
+            ip.insert(ipport);
+            seederlist[buffer]=ip;
+        }
+
+        logfile<<"adding the data in the map data structure"<<endl;
+       
+
+        memset(buffer, 0, sizeof(buffer));
+        memset(buffer2, 0, sizeof(buffer2));
+        memset(ipport, 0, sizeof(ipport));
+        logfile<<"buffer cleared"<<endl;
+
+        printf("thread id %d\n",t->thread_id);
+
     }
-
-
-   
-
-    memset(buffer, 0, sizeof(buffer));
-    memset(buffer2, 0, sizeof(buffer2));
-    memset(ipport, 0, sizeof(ipport));
-
-    //CHECK THE CONTENT OF MAP-----------
-  
-    // cout<<"============================================================DS content\n";
-    // for(mapitr=seederlist.begin();mapitr!=seederlist.end();++mapitr){
-    //     cout<<"size"<<(mapitr->first).size()<<endl;
-    //     cout<<mapitr->first<<":";
-    //     for(setitr=(mapitr->second).begin();setitr!=(mapitr->second).end();++setitr){
-    //         cout<<*setitr<<"->";
-    //     }
-    //     cout<<endl;
-    // }
-    // cout<<"============================================================DS content\n";
-    
-
-    //printf("after clear: %s\n",buffer );
-    //send(t->socket_id , hello , strlen(hello) , 0 ); 
-    //printf("Hello message sent\n");
-    printf("thread id %d\n",t->thread_id);
-    //sleep(5);
-    //printf("sleep over");
-   // cout << "Thread ID : " << t->thread_id ;
-   // cout << " Message : " << t->socket_id << endl;
+    memset(command,0,sizeof(command));
 
    pthread_exit(NULL);
 }
+
 
 int main(int argc, char const *argv[]) 
 { 
@@ -123,10 +138,14 @@ int main(int argc, char const *argv[])
     string line="";
     string sha1="";
     string ipport="";
+    string fil(argv[3]);
+    cout<<"fil "<<fil<<endl;
+    f.open(fil,ios::in);
     int size = f.tellg();
+    //f<<"supriya"<<endl;
     cout<<"size: "<<size<<endl;
     while(getline(f, line)) {
-      cout<<"gggggggggg";
+      //cout<<"gggggggggg";
       sha1=line.substr(0,line.find('-'));
       int i=line.find_last_of("-");
       ipport=line.substr(i+1);
@@ -142,16 +161,16 @@ int main(int argc, char const *argv[])
       }
 
     }
-    cout<<"============================================================DS content\n";
-    for(mapitr=seederlist.begin();mapitr!=seederlist.end();++mapitr){
-        cout<<"size"<<(mapitr->first).size()<<endl;
-        cout<<mapitr->first<<"->";
-        for(setitr=(mapitr->second).begin();setitr!=(mapitr->second).end();++setitr){
-            cout<<*setitr<<endl;
-        }
-        cout<<endl;
-    }
-    cout<<"============================================================DS content\n";
+    // cout<<"============================================================DS content\n";
+    // for(mapitr=seederlist.begin();mapitr!=seederlist.end();++mapitr){
+    //     cout<<"size"<<(mapitr->first).size()<<endl;
+    //     cout<<mapitr->first<<"->";
+    //     for(setitr=(mapitr->second).begin();setitr!=(mapitr->second).end();++setitr){
+    //         cout<<*setitr<<endl;
+    //     }
+    //     cout<<endl;
+    // }
+    // cout<<"============================================================DS content\n";
 
     //-------------------------------------------------------------------------
 
@@ -161,8 +180,12 @@ int main(int argc, char const *argv[])
     int addrlen = sizeof(address); 
 
     //opening log file to stor the logs
-    
-    logfile.open(log_file.c_str(),ofstream::app);    
+    string log_file(argv[4]);
+    logfile.open(log_file,ofstream::app);    
+    if(logfile.is_open()){
+      cout<<"correct";
+    }
+    logfile<<"*******************************************************"<<endl;
     // Creating socket file descriptor 
     if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) == 0) 
     { 
@@ -207,24 +230,32 @@ int main(int argc, char const *argv[])
             exit(EXIT_FAILURE); 
         } 
         logfile<<"Connection is established between client and server, and they are ready to transfer data"<<endl;
-       pthread_t th;
-       struct thread_data t;
-       int rc;
-       i++;
-       t.thread_id=i;
-       t.socket_id=socket_created;
-
-       rc = pthread_create(&th, NULL, thread_process, (void *)&t);
-       logfile<<"Thread "<<i<<" created"<<endl;
-       if(rc){
-             cout << "Error:unable to join," << rc << endl;
-             logfile<<"Thread creation failed:unable to join"<<endl;
-             exit(-1);
-        }
-        pthread_detach(th);
-        logfile<<"thread "<<i<<" detached"<<endl;
-       //i++;
-        //cout<<"returned";
+       //char command[10];
+       //int valread = read(socket_created , command, 1);
+       //logfile<<"command received : "<<command;
+       //sleep(1);
+      
+   
+       
+     
+         pthread_t th;
+         struct thread_data t;
+         int rc;
+         i++;
+         t.thread_id=i;
+         t.socket_id=socket_created;
+         t.seed=fil;
+         rc = pthread_create(&th, NULL, thread_process, (void *)&t);
+         logfile<<"Thread "<<i<<" created"<<endl;
+         if(rc){
+               cout << "Error:unable to join," << rc << endl;
+               logfile<<"Thread creation failed:unable to join"<<endl;
+               exit(-1);
+          }
+          pthread_detach(th);
+          logfile<<"thread "<<i<<" detached"<<endl;
+       
+     
     }
     
    

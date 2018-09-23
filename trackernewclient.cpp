@@ -27,12 +27,19 @@ int client_program(string file_read_str,string filen_str,string clientipport,str
         c_logfile<<"error in socket creation"<<endl;
         return -1; 
     } 
+    c_logfile<<"**********************************************"<<endl;
     c_logfile<<"Socket created successfully"<<endl;
+    int opt=1;
+    if (setsockopt(sock, SOL_SOCKET, SO_REUSEADDR | SO_REUSEPORT,&opt, sizeof(opt))) 
+    { 
+      perror("setsockopt"); 
+      exit(EXIT_FAILURE); 
+    } 
     memset(&serv_addr, '0', sizeof(serv_addr)); 
     
     serv_addr.sin_family = AF_INET; 
-    serv_addr.sin_port = htons(PORT); 
-    serv_addr.sin_addr.s_addr = INADDR_ANY; 
+    serv_addr.sin_port = htons(stoi(port_t1)); 
+    serv_addr.sin_addr.s_addr = inet_addr(ip_t2.c_str()); 
 
 
     address.sin_family = AF_INET; 
@@ -40,7 +47,7 @@ int client_program(string file_read_str,string filen_str,string clientipport,str
     address.sin_addr.s_addr = inet_addr(ip_c.c_str()); 
     c_logfile<<"binding client port no and address to the socket"<<endl;
        
-    // Forcefully attaching socket to the port 8080 
+    // Forcefully attaching socket to the port 8080
     if (bind(sock, (struct sockaddr *)&address,  
                                  sizeof(address))<0) 
     { 
@@ -48,6 +55,7 @@ int client_program(string file_read_str,string filen_str,string clientipport,str
         c_logfile<<"Bind Failed!!"<<endl;
         exit(EXIT_FAILURE); 
     } 
+
     c_logfile<<"Bind successful"<<endl;
     // Convert IPv4 and IPv6 addresses from text to binary form 
     if(inet_pton(AF_INET, "127.0.0.1", &serv_addr.sin_addr)<=0)  
@@ -81,8 +89,9 @@ int client_program(string file_read_str,string filen_str,string clientipport,str
 	   
   	}
 
-    complete_sha1=tracker1ipport+"\n"+tracker2ipport+"\n"+filen_str.c_str()+"\n"+to_string(size)+"\n";
+    complete_sha1=tracker1ipport+"\n"+tracker2ipport+"\n"+filen_str.c_str()+to_string(size)+"\n";
   	FILE *fs;
+    filen_str[filen_str.length()-1]='\0';
   	fs =fopen(filen_str.c_str(),"w");
     c_logfile<<filen_str<<"opened in write mode"<<endl;
 		 i=0;
@@ -152,13 +161,19 @@ int client_program(string file_read_str,string filen_str,string clientipport,str
     char msg2[1024];  
     cout<<"sha1_of_sha1 from client: "<<sha1_of_sha1;
     c_logfile<<"Ready to send SHA1 to tracker using send"<<endl;
-    send(sock , sha1_of_sha1.c_str() , len , 0 );
+    char command[10];
+    command[0]='2';
+    send(sock , (const char*)command , strlen(command) , 0 ); 
+    printf("command code sent...\n");
+    sleep(1);
+
+    send(sock , (const char*)sha1_of_sha1.c_str() , len , 0 );
 
     sleep(1);
     c_logfile<<"Ready to send ip and port of client to tracker using send"<<endl;
     send(sock , (const char*)clientipport.c_str(),clientipport.length(),0); 
   
-   
+  close(sock);
 	file.close();
   return 0;
  

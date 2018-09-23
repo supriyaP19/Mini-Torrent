@@ -31,3 +31,455 @@ SHA1 of file in chunks of 512KB created
 SHA1 of SHA1 is created to send the tracker
 Ready to send SHA1 to tracker using send
 Ready to send ip and port of client to tracker using send
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+video.mp4 file is opened in read mode
+oo.mtorrent
+opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+video.mp4 file is opened in read mode
+ooo.mtorrent
+opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+video.mp4 file is opened in read mode
+output22.mtorrent
+opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+Kingdom Of Hevan.mkv file is opened in read mode
+k.mtorrent
+opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+Kingdom Of Hevan.mkv file is opened in read mode
+new.mtorrent
+opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+video.mp4 file is opened in read mode
+m.mtorrent
+opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+video.mp4 file is opened in read mode
+output.mtorrent
+opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+video.mp4 file is opened in read mode
+a.mtorrent
+opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+video.mp4 file is opened in read mode
+n.mtorrent
+opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+video.mp4 file is opened in read mode
+jak.mtorrent
+opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+video.mp4 file is opened in read mode
+kkkl.mtorrent
+opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+video.mp4 file is opened in read mode
+lkl.mtorrent
+opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+video.mp4 file is opened in read mode
+fjkl.mtorrent
+opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+video.mp4 file is opened in read mode
+sjs.mtorrent
+opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+video.mp4 file is opened in read mode
+opened in write mode
+SHA1 of file in chunks of 512KB created
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+video.mp4 file is opened in read mode
+out.mtorrent
+opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+Socket created successfully
+binding client port no and address to the socket
+Bind Failed!!
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+video.mp4 file is opened in read mode
+ss.mtorrent
+opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+video.mp4 file is opened in read mode
+kkk.mtorrent
+opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+Socket created successfully
+binding client port no and address to the socket
+Bind Failed!!
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+video.mp4 file is opened in read mode
+jdfjd.mtorent
+opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+video.mp4 file is opened in read mode
+jhdj.mtorrent
+opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+video.mp4 file is opened in read mode
+output.mtorrent
+opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+video.mp4 file is opened in read mode
+rrr.mtorrent
+opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+**********************************************
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+video.mp4 file is opened in read mode
+a.mtorrent
+opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+**********************************************
+Socket created successfully
+binding client port no and address to the socket
+Bind Failed!!
+**********************************************
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+**********************************************
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+**********************************************
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+**********************************************
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect Failed
+**********************************************
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+**********************************************
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+**********************************************
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+**********************************************
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+**********************************************
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+video.mp4 file is opened in read mode
+a.mtorrent
+opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+**********************************************
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+video.mp4 file is opened in read mode
+output.mtorrent
+opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+**********************************************
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+video.mp4 file is opened in read mode
+out1.mtorrent
+opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+**********************************************
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+v.mtorrent opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+**********************************************
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+**********************************************
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+**********************************************
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+video.mp4 file is opened in read mode
+sss.mtorrent opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+**********************************************
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+video.mp4 file is opened in read mode
+out.mtorrent opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+**********************************************
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+Kingdom Of Hevan.mkv file is opened in read mode
+out2.mtorrent opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+**********************************************
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+book.djvu file is opened in read mode
+book.mtorrent opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+**********************************************
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+book.djvu file is opened in read mode
+book1.mtorrent opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+**********************************************
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+book.djvu file is opened in read mode
+book2.mtorrent opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+**********************************************
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+book.djvu file is opened in read mode
+book3.mtorrent opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+**********************************************
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+book.djvu file is opened in read mode
+book4.mtorrent opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send
+**********************************************
+Socket created successfully
+binding client port no and address to the socket
+Bind successful
+Connect successful
+song.mp4 file is opened in read mode
+song.mtorrent opened in write mode
+SHA1 of file in chunks of 512KB created
+SHA1 of SHA1 is created to send the tracker
+Ready to send SHA1 to tracker using send
+Ready to send ip and port of client to tracker using send

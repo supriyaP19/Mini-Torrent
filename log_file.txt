@@ -1,91 +1,724 @@
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
 Connection is established between client and server, and they are ready to transfer data
 Thread 1 created
 thread 1 detached
 Waiting for the client to approach the tracker to make a connection
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 2 created
+thread 2 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+writing in seeder_list file
+adding the data in the map data structure
+buffer cleared
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+writing in seeder_list file
+adding the data in the map data structure
+buffer cleared
+Connection is established between client and server, and they are ready to transfer data
+Thread 2 created
+thread 2 detached
+Waiting for the client to approach the tracker to make a connection
+writing in seeder_list file
+adding the data in the map data structure
+buffer cleared
+Connection is established between client and server, and they are ready to transfer data
+Thread 3 created
+thread 3 detached
+Waiting for the client to approach the tracker to make a connection
+writing in seeder_list file
+adding the data in the map data structure
+buffer cleared
+Connection is established between client and server, and they are ready to transfer data
+Thread 4 created
+thread 4 detached
+Waiting for the client to approach the tracker to make a connection
+writing in seeder_list file
+adding the data in the map data structure
+buffer cleared
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+writing in seeder_list file
+adding the data in the map data structure
+buffer cleared
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+writing in seeder_list file
+adding the data in the map data structure
+buffer cleared
+Connection is established between client and server, and they are ready to transfer data
+Thread 2 created
+thread 2 detached
+Waiting for the client to approach the tracker to make a connection
+writing in seeder_list file
+adding the data in the map data structure
+buffer cleared
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 1 created for get command
+thread 1 detached for get command
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
 Waiting for the client to approach the tracker to make a connection
+*******************************************************
 tracker socket created
 binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 1 created for get command
+thread 1 detached for get command
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 1 created for get command
+thread 1 detached for get command
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 2 created for get command
+thread 2 detached for get command
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 3 created for get command
+thread 3 detached for get command
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 4 created for get command
+thread 4 detached for get command
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 5 created for get command
+thread 5 detached for get command
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 6 created for get command
+thread 6 detached for get command
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 7 created for get command
+thread 7 detached for get command
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 8 created for get command
+thread 8 detached for get command
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 9 created for get command
+thread 9 detached for get command
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 10 created for get command
+thread 10 detached for get command
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 11 created for get command
+thread 11 detached for get command
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 1 created for get command
+thread 1 detached for get command
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 2 created for get command
+thread 2 detached for get command
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 3 created for get command
+thread 3 detached for get command
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 1 created for get command
+thread 1 detached for get command
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 2 created for get command
+thread 2 detached for get command
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 3 created for get command
+thread 3 detached for get command
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 4 created for get command
+thread 4 detached for get command
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+writing in seeder_list file
+adding the data in the map data structure
+buffer cleared
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 1 created for get command
+thread 1 detached for get command
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 1 created for get command
+thread 1 detached for get command
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+writing in seeder_list file
+adding the data in the map data structure
+buffer cleared
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 1 created for get command
+thread 1 detached for get command
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 1 created for get command
+thread 1 detached for get command
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 1 created for get command
+thread 1 detached for get command
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 1 created for get command
+thread 1 detached for get command
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+writing in seeder_list file
+adding the data in the map data structure
+buffer cleared
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+command received : 1Thread 1 created for get command
+thread 1 detached for get command
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+writing in seeder_list file
+adding the data in the map data structure
+buffer cleared
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 2 created
+thread 2 detached
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 3 created
+thread 3 detached
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 4 created
+thread 4 detached
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 5 created
+thread 5 detached
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 6 created
+thread 6 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 2 created
+thread 2 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+writing in seeder_list file
+adding the data in the map data structure
+buffer cleared
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+writing in seeder_list file
+adding the data in the map data structure
+buffer cleared
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+writing in seeder_list file
+adding the data in the map data structure
+buffer cleared
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+writing in seeder_list file
+adding the data in the map data structure
+buffer cleared
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
+Waiting for the client to approach the tracker to make a connection
+writing in seeder_list file
+adding the data in the map data structure
+buffer cleared
+Connection is established between client and server, and they are ready to transfer data
+Thread 2 created
+thread 2 detached
+Waiting for the client to approach the tracker to make a connection
+writing in seeder_list file
+adding the data in the map data structure
+buffer cleared
+Connection is established between client and server, and they are ready to transfer data
+Thread 3 created
+thread 3 detached
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 4 created
+thread 4 detached
+Waiting for the client to approach the tracker to make a connection
+*******************************************************
+tracker socket created
+binding the socket to the address and port number
+Waiting for the client to approach the tracker to make a connection
+Connection is established between client and server, and they are ready to transfer data
+Thread 1 created
+thread 1 detached
 Waiting for the client to approach the tracker to make a connection
